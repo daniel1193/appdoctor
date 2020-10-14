@@ -1,0 +1,13 @@
+{% extends 'miaplicacion/layout.html' %}
+{% block content %}
+    <div class="card" style="width: 18rem;">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paciente</h5>
+          <p class="card-text">Aqui enoncontrara algunas de la informacion de sus medicos</p>
+          <a href="{% url 'home' %}" class="btn btn-primary">Mi medico</a>
+          <br/>
+          <a href="{% url 'asignar' %}" class="btn btn-primary">Asignar nuevo medico</a>
+        </div>
+    </div>
+{% endblock %}

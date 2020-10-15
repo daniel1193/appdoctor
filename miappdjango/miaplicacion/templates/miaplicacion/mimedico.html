@@ -1,1 +1,30 @@
-{% extends 'mipaginaweb/layout.html' %}
+{% extends 'miaplicacion/layout.html' %}
+{% block content %}
+<style>
+    div,img,h5,p,a{
+        margin: auto;
+    }
+</style>
+<div class="text-center">
+    <h4 class="mt-5">Tu medico</h4>
+    {%for medico in medicos %}
+        
+    <div class="card mt-5" style=" width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">
+                {{medico.nombre}}
+            </h5>
+            <h6 class="mt-2">
+                Apellido: {{medico.apellido}} <br/>
+                Correo: {{medico.correo}}
+                Especialidad: {{medico.especialidad}}
+            </h6>
+
+            <p class="card-text">Un medico grauado en la unirsidad del Cauca con una
+            de las mejores tesis a nivel regional</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock %}

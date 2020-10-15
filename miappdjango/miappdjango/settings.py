@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'miappdjango.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'mydatabase',
+        'NAME': 'medicosdb',
         'USER': 'postgres',
         'PASSWORD': 'daniel1193',
         'HOST': '127.0.0.1',

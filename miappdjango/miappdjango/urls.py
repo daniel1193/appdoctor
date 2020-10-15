@@ -21,4 +21,5 @@ urlpatterns = [
     path('',include('miaplicacion.urls')),
     path('asignar/', include('miaplicacion.urls')),
     path('mimedico/', include('miaplicacion.urls')),
+    path('formula/', include('miaplicacion.urls')),
 ]

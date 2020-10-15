@@ -14,3 +14,8 @@ class FormulasPacientesAdmin(admin.ModelAdmin):
 
 admin.site.register(HistoriaPaciente, HistoriaPacienteAdmin)
 admin.site.register(FormulasPacientes, FormulasPacientesAdmin)
+
+#modificacion de titulos y subtitulos
+admin.site.site_header = 'Administracion medica'
+admin.site.index_title = 'Rol Medico'
+admin.site.site_title = 'Datos rol medico'

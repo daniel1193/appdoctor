@@ -1,0 +1,20 @@
+{% extends 'miaplicacion/layout.html' %}
+{% block content %}
+<h3 class="text-align:center p-3">Mis formulas</h3>
+    {%for formula in formulas %}     
+    <div class="card mt-4 float-left" style=" width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">
+                Fecha: {{formula.fecha}}
+            </h5>
+            <h6 class="mt-2">
+                Medicamento: {{formula.medicamento}} <br/>
+                Cantidad: {{formula.cantidad}}
+                Dosis: {{formula.dosis}}
+            </h6>
+
+            <p class="card-text">Si tienes alguna duda puedes comunicarte con tu medico</p>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

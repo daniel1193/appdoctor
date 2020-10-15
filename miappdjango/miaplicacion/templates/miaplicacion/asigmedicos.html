@@ -1,37 +1,22 @@
 {% extends 'miaplicacion/layout.html' %}
 {% block content %}
-<h3 class="text-align:center p-4">Medicos disponibles</h3>
-    
+    <h3 class="text-align:center p-3">Medicos disponibles</h3>
+    {%for medicextra in medicosdispo %}
+        
+    <div class="card mt-4 float-left" style=" width: 18rem;">
+        <div class="card-body">
+            <h5 class="card-title">
+                {{medicextra.nombre}}
+            </h5>
+            <h6 class="mt-2">
+                Apellido: {{medicextra.apellido}} <br/>
+                Correo: {{medicextra.correo}}
+                Especialidad: {{medicextra.especialidad}}
+            </h6>
 
-    <table class="table table-hover table-dark">
-        <thead>
-            <tr>
-                <th scope="col">Nombre</th>
-                <th scope="col">Apellido</th>
-                <th scope="col">Telefono</th>
-                <th scope="col">Correo</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
-    </table>
-
+            <p class="card-text">Un medico graduado en la universidad del Cauca con una
+            de las mejores tesis a nivel regional</p>
+        </div>
+    </div>
+    {% endfor %}
 {% endblock %}
